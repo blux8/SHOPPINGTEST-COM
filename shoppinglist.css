@@ -1,0 +1,145 @@
+:root {
+  --dcRed: #da7289;
+  --dcRedHover: #a05063;
+  --dcCyan: #89dada;
+  --dcCyanHover: #287e7e;
+  --dcBlue: #7289da;
+  --dcBlueHover: #4f5b93;
+  --dcGray1: #42454a;
+  --dcGray2: #36393e;
+  --dcGray3: #282b30;
+  --dcGray4: #1e2124;
+}
+
+::selection {
+  background-color: var(--dcCyanHover);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--dcGray4);
+}
+
+h1, p, input {
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.headline {
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 14px;
+  background-color: var(--dcGray3);
+  border-radius: 14px;
+  width: fit-content;
+}
+
+.inputSection {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 14px;
+  text-align: center;
+  padding: 14px;
+  background-color: var(--dcGray3);
+  border-radius: 14px;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+}
+
+.inputBar {
+  padding: 20px;
+  width: 20%;
+  min-width: 200px;
+  font-size: 20px;
+  background-color: var(--dcGray2);
+  border: none;
+  border-radius: 14px 0px 0px 14px;
+  font-weight: 700;
+}
+
+.submitButton, .deleteAllButton, .switchButton {
+  color: white;
+  padding: 20px;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  transition: 0.2s;
+}
+.submitButton:hover, .deleteAllButton:hover, .switchButton:hover {
+  cursor: pointer;
+}
+
+.submitButton {
+  background-color: var(--dcBlue);
+}
+.submitButton:hover {
+  background-color: var(--dcBlueHover);
+}
+
+.deleteAllButton {
+  background-color: var(--dcRed);
+}
+.deleteAllButton:hover {
+  background-color: var(--dcRedHover);
+}
+
+.switchButton {
+  background-color: var(--dcCyan);
+  border-radius: 0px 14px 14px 0px;
+  height: 100%;
+}
+.switchButton:hover {
+  background-color: var(--dcCyanHover);
+}
+
+.taskCollection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 14px;
+}
+
+.task {
+  background-color: var(--dcGray3);
+  padding: 14px;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0 auto;
+  border-radius: 14px;
+  transition: background-color 0.2s;
+}
+.task:hover {
+  cursor: pointer;
+}
+
+.taskDiv {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s;
+}
+
+.deleteTask {
+  font-weight: 800;
+  font-size: 24px;
+  color: var(--dcGray2);
+  transition: color 0.2s;
+}
+.deleteTask:hover {
+  color: var(--dcRed);
+  cursor: pointer;
+}
+
+.headlineSection {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shoppinglist.css">
+    <script src="shoppinglist.js" defer></script>
+  </head>
+  <body>
+    <div class="headlineSection">
+      <div class="cardList" id="cardList"></div>
+      <h1 class="headline">Einkaufsliste</h1>
+    </div>
+    <div class="inputSection">
+      <input class="inputBar" id="inputBar" type="text" placeholder="Schreibe etwas...">
+      <button class="submitButton" id="submitButton" onclick="submitTask()">Hinzufügen</button>
+      <button class="deleteAllButton" id="deleteAllButton">Alles löschen</button>
+      <a style="" href="shoppinglist.html" target="_blank"><button class="switchButton" id="switchButton">Neue Liste</button></a>
+    </div>
+    <div class="taskCollection" id="taskCollection"></div>
+    <div class="confirmDeleteCard" id="confirmDeleteCard"></div>
+  </body>
+</html>
